@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "postcss": "^5.0.16",
-    "postcss-safe-parser": "^1.0.6"
+    "postcss-safe-parser": "^2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",

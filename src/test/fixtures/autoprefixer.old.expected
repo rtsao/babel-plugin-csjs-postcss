@@ -3,6 +3,7 @@ csjs`
 
   .foo {
     -webkit-transform: ${ foo };
+        -ms-transform: ${ foo };
             transform: ${ foo }
   }
 

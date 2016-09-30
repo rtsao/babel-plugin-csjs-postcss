@@ -1,2 +1,8 @@
 
-csjs`.foo{ transform: ${foo}; color: ${bar} }`;
+csjs`
+
+  .foo {
+    transform: ${foo}
+  }
+
+`;

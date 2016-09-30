@@ -34,12 +34,12 @@ test('basic autoprefixing (arguments)', (t) => {
   var output = babel.transformFileSync(__dirname + '/fixtures/autoprefixer.source', {
     plugins: [[pluginPath, {
       plugins: [
-        ['autoprefixer', {browsers: ['last 2 versions']}]
+        ['autoprefixer', {browsers: ['last 20 versions']}]
       ]
     }]]
   });
 
-  var expected = fs.readFileSync(__dirname + '/fixtures/autoprefixer.expected', 'utf-8');
+  var expected = fs.readFileSync(__dirname + '/fixtures/autoprefixer.old.expected', 'utf-8');
 
   t.equal(output.code.trim(), expected.trim(), 'output matches expected');
   t.end();
